@@ -8,10 +8,10 @@ void main(List<String> arguments) {
     double peso = ConsoleUtils.lerDoubleComTexto("Digite o seu peso (kg): ");
     double altura = ConsoleUtils.lerDoubleComTexto("Digite a sua altura (cm): ");
 
-    Pessoa p1 = Pessoa('nome', peso, altura);
+    Pessoa pessoa = Pessoa('nome', peso, altura);
 
     try {
-      double imc = p1.calcularIMC();
+      double imc = pessoa.calcularIMC();
       retornaClassificacao(imc);
     } catch (e) {
       print("Erro ao calcular o IMC: $e");
